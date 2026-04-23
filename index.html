@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>For Mia Trisha — A message for you.</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ── Background music ─────────────────── -->
+  <audio id="bgMusic" loop>
+    <source src="music/Ngiti.mp3" type="audio/mp3" />
+  </audio>
+
+  <!-- ── Entry State: Envelope Card ──────── -->
+  <div class="scene" id="entryScene">
+    <div class="envelope-card">
+
+      <div class="envelope-icon" aria-hidden="true">
+        <svg viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="62" height="46" rx="5" stroke="#a8c5b5" stroke-width="2" fill="white" fill-opacity="0.6"/>
+          <path d="M1 8 L32 28 L63 8" stroke="#a8c5b5" stroke-width="2" fill="none"/>
+          <path d="M1 48 L22 26" stroke="#a8c5b5" stroke-width="1.5"/>
+          <path d="M63 48 L42 26" stroke="#a8c5b5" stroke-width="1.5"/>
+        </svg>
+      </div>
+
+      <p class="entry-for">for</p>
+      <p class="entry-name">Mia Trisha</p>
+      <p class="entry-label">A message for you.</p>
+      <p class="entry-hint">from someone who notices</p>
+
+      <button class="open-btn" id="openBtn" aria-label="Open the message">
+        Tap to Open
+      </button>
+
+    </div>
+  </div>
+
+  <!-- ── Letter State: The Note ───────────── -->
+  <div class="scene hidden" id="letterScene">
+    <div class="letter-wrap">
+
+      <div class="letter-paper">
+
+        <div class="letter-header">
+          <p class="letter-date" id="letterDate"></p>
+          <p class="letter-to">Dear Mia Trisha,</p>
+        </div>
+
+        <div class="letter-body">
+
+          <p class="letter-line">
+            Hi.
+          </p>
+
+         <div class="note-content">
+  <p class="letter-line">
+    I just wanted to say something that’s been on my mind. Usually, I’m 
+    just focused on my code and logic, but I think it’s important to 
+    tell people when they are appreciated.
+  </p>
+
+  <p class="letter-line">
+    I really like how calm everything feels when you’re around. You don’t 
+    need to do anything grand or wear the best dress just to look good. 
+    To be honest, you are at your best when you’re just being yourself.
+  </p>
+
+  <p class="letter-line">
+    I’ve learned to value the simple moments with you—whether we're 
+    just talking or walking around here in Sorsogon. You have a way of 
+    making an ordinary day feel special without even trying.
+  </p>
+
+  <p class="letter-line">
+    I’m writing this because I want you to know that you are enough, 
+    Mia Trisha. You don’t need to change anything or try too hard. 
+    Just being you is already a big deal to me.
+  </p>
+
+  <p class="letter-line">
+    I just wanted you to feel that impact. In a world where everything is 
+    so complicated, it’s nice to know someone as simple and genuine as you.
+  </p>
+
+  <p class="letter-line">
+    I didn’t want the week to end without letting you know.
+  </p>
+  
+  <p class="signature">Best, Harold</p>
+</div>
+        <div class="letter-signature">
+          <span class="signature-from">Always,</span>
+          <span class="signature-name">Harold</span>
+        </div>
+
+        <div class="letter-deco" aria-hidden="true">✦</div>
+
+      </div>
+
+      <!-- Music toggle -->
+      <button class="music-btn" id="musicBtn" aria-label="Toggle music">
+        <span id="musicIcon">♪</span>
+        <span class="music-label">music</span>
+      </button>
+
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
